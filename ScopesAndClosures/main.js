@@ -39,8 +39,10 @@ if (flag) {
     console.log('From "if" block scope', bar)
 }
 
-console.log("Outside 'if' scope", bar) // bar is accessible outside 'if' 
+// bar is accessible outside 'if' 
 // becuase var will always belong of enclosing scope
+console.log("Outside 'if' scope", bar)
+
 
 var flag2 = true;
 if (flag2) {
@@ -48,4 +50,6 @@ if (flag2) {
     console.log('From "if" block scope', private_bar)
 }
 
-console.log("Outside 'if' scope", private_bar)  // Will throw reference error as private_bar is not accesible outside 'if' block
+// Will throw reference error as 
+// private_bar is not accesible outside 'if' block
+console.log("Outside 'if' scope", private_bar)
